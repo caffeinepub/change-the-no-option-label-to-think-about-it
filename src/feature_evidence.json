@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-valentine-question-ui-so-the-second-option-label-currently-displayed-as-no-is-changed-to-exactly-think-about-it-keep-the-yes-option-unchanged-this-includes-the-moving-avoiding-button-component-used-for-the-second-option",
+      "featureTitle": "Update the Valentine question UI so the second option label currently displayed as \"No\" is changed to exactly \"think about it\" (keep the \"Yes!\" option unchanged). This includes the moving/avoiding button component used for the second option.",
+      "files": [
+        "frontend/src/components/AvoidButton.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "blob-storage@4.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

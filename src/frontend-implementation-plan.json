@@ -1,0 +1,43 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update Valentine 'No' label to 'think about it' and ship updated frontend",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Change the second option button label from \"No\" to exactly \"think about it\" while keeping all other UI copy (including \"Yes!\") unchanged.",
+      "acceptanceCriteria": [
+        "On the main question screen (\"Will you be my Valentine?\"), the second option button shows the text \"think about it\" instead of \"No\".",
+        "The \"Yes!\" button text remains unchanged.",
+        "No other user-facing copy is unintentionally changed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AvoidButton.tsx",
+          "operation": "modify",
+          "description": "Update the AvoidButton rendered label text from \"No\" to exactly \"think about it\". Ensure no other user-facing strings are modified. (Verify the component's usage instructions before implementing.)"
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Prepare the project for rebuilding and redeploying the updated frontend so the updated label can be viewed/shared live.",
+      "acceptanceCriteria": [
+        "A new deployed version is produced that includes the updated \"think about it\" label.",
+        "The deployed version loads without runtime errors and the main question screen renders correctly."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/README.md",
+          "operation": "create",
+          "description": "Add concise rebuild/redeploy instructions (install, build, preview/start) and a quick validation checklist to confirm the main question screen renders and the second button label is \"think about it\". (Verify the component's usage instructions before implementing.)"
+        },
+        {
+          "path": "frontend/package.json",
+          "operation": "modify",
+          "description": "If needed, ensure standard build/start/preview scripts are present and correct for redeployment workflows, without introducing new features or changing app behavior. (Verify the component's usage instructions before implementing.)"
+        }
+      ]
+    }
+  ]
+}

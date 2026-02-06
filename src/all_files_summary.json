@@ -1,0 +1,17 @@
+{
+  "backend/main.mo": "Actor importing and including a blob storage mixin to provide storage functionality.",
+  "feature_evidence.json": "Feature evidence report describing a UI label change involving AvoidButton.tsx.",
+  "frontend-file-summaries.txt": "JSON mapping of frontend file paths to short descriptive summaries for build reference.",
+  "frontend/index.css": "Tailwind base and theme variable definitions for global light/dark styling.",
+  "frontend/index.html": "Basic HTML file mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main Valentine app component controlling UI, animations, and Yes/Avoid interactions.",
+  "frontend/src/components/AvoidButton.tsx": "Button that moves to random positions on hover or touch and displays 'think about it'.",
+  "frontend/src/components/FloatingHearts.tsx": "Generates animated floating heart particles for celebration animations.",
+  "frontend/src/hooks/useActor.ts": "Hook that creates and manages a backend actor instance tied to Internet Identity.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context provider and hooks for managing Internet Identity login state.",
+  "frontend/src/hooks/useQueries.ts": "Intentionally empty placeholder for backend query hooks.",
+  "frontend/src/index.css": "Tailwind styles, theme variables, heart animations, and Polaroid frame animations.",
+  "frontend/src/main.tsx": "React entry point wiring providers and rendering the App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration enabling dark mode, custom colors, animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Defines the project's current state, including feature requests to rename a UI option and redeploy the updated site."
+}

@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Main Valentine's Day application component with personalized message for Saanvi Dubey, interactive Yes/No buttons, celebration screen with floating hearts animation, and a Polaroid-style photo that fades in when \"Yes\" is clicked.",
+  "frontend/src/components/FloatingHearts.tsx": "Component that generates and animates multiple floating heart particles for the celebration effect when \"Yes\" is clicked.",
+  "frontend/src/components/AvoidButton.tsx": "Interactive button component that displays \"think about it\" and playfully moves away when the user tries to hover or touch it.",
+  "frontend/src/index.css": "Global styles with Valentine's themed OKLCH color system (rose, pink, red tones), custom keyframe animations for floating hearts, and Polaroid photo frame styling with fade-in animation and hover effects.",
+  "frontend/src/hooks/useQueries.ts": "Empty file as no backend queries are needed for this client-side only application."
+}

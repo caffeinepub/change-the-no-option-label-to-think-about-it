@@ -1,2 +1,3 @@
-# change-the-no-option-label-to-think-about-it
-Exported from Caffeine project: Change the 'No' option label to 'think about it'
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

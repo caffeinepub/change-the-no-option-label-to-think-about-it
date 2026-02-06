@@ -1,0 +1,56 @@
+{
+  "kind": "build_request",
+  "title": "Change the 'No' option label to 'think about it'",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update the Valentine question UI so the second option label currently displayed as \"No\" is changed to exactly \"think about it\" (keep the \"Yes!\" option unchanged). This includes the moving/avoiding button component used for the second option.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-17",
+          "msg-18"
+        ],
+        "quotes": [
+          "There are two options yes & No\nChange no to think about it",
+          "Do the change and share it again"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the main question screen (\"Will you be my Valentine?\"), the second option button shows the text \"think about it\" instead of \"No\".",
+        "The \"Yes!\" button text remains unchanged.",
+        "No other user-facing copy is unintentionally changed."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Rebuild and redeploy the updated frontend so the user can view/share the updated live version.",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-18"
+        ],
+        "quotes": [
+          "Do the change and share it again"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new deployed version is produced that includes the updated \"think about it\" label.",
+        "The deployed version loads without runtime errors and the main question screen renders correctly."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui (shadcn components are read-only in this environment).",
+    "Keep the backend as-is; no backend changes are required for this UI-only text update."
+  ],
+  "nonGoals": [
+    "Changing the Valentine message text, the \"Yes!\" flow, or the confirmation screen content.",
+    "Adding new features (analytics, accounts, additional pages, etc.)."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
